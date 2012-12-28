@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02F61AF71681386000C708C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F61AF61681386000C708C8 /* Foundation.framework */; };
+		02F61AFA1681386000C708C8 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 02F61AF91681386000C708C8 /* main.mm */; };
+		02F61AFE1681386000C708C8 /* blinkcpu.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 02F61AFD1681386000C708C8 /* blinkcpu.1 */; };
+		02F61B081681388100C708C8 /* MenuMeterCPUStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F61B051681388100C708C8 /* MenuMeterCPUStats.m */; };
+		02F61B1116813BDF00C708C8 /* blink1-lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 02F61B0E16813BDF00C708C8 /* blink1-lib.c */; };
+		02F61B1416813BF200C708C8 /* hid.c in Sources */ = {isa = PBXBuildFile; fileRef = 02F61B1316813BF200C708C8 /* hid.c */; };
+		02F61B1616813C1100C708C8 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F61B1516813C1100C708C8 /* IOKit.framework */; };
+		02F61B1916813C5C00C708C8 /* Blink1.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F61B1816813C5C00C708C8 /* Blink1.m */; };
+		02F61B1D16813CA400C708C8 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F61B1C16813CA400C708C8 /* AppKit.framework */; };
+		02F61B2516823B7F00C708C8 /* options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02F61B2316823B7F00C708C8 /* options.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		02F61AF01681386000C708C8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				02F61AFE1681386000C708C8 /* blinkcpu.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02F61AF21681386000C708C8 /* blinkcpu */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = blinkcpu; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F61AF61681386000C708C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		02F61AF91681386000C708C8 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		02F61AFC1681386000C708C8 /* blinkcpu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "blinkcpu-Prefix.pch"; sourceTree = "<group>"; };
+		02F61AFD1681386000C708C8 /* blinkcpu.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = blinkcpu.1; sourceTree = "<group>"; };
+		02F61B041681388100C708C8 /* MenuMeterCPUStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuMeterCPUStats.h; sourceTree = "<group>"; };
+		02F61B051681388100C708C8 /* MenuMeterCPUStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuMeterCPUStats.m; sourceTree = "<group>"; };
+		02F61B0A16813ABA00C708C8 /* MenuMeterCPU.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuMeterCPU.h; sourceTree = "<group>"; };
+		02F61B0E16813BDF00C708C8 /* blink1-lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "blink1-lib.c"; sourceTree = "<group>"; };
+		02F61B0F16813BDF00C708C8 /* blink1-lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "blink1-lib.h"; sourceTree = "<group>"; };
+		02F61B1016813BDF00C708C8 /* usbconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usbconfig.h; sourceTree = "<group>"; };
+		02F61B1216813BEA00C708C8 /* hidapi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hidapi.h; sourceTree = "<group>"; };
+		02F61B1316813BF200C708C8 /* hid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hid.c; sourceTree = "<group>"; };
+		02F61B1516813C1100C708C8 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = ../../../../System/Library/Frameworks/IOKit.framework; sourceTree = "<group>"; };
+		02F61B1716813C5C00C708C8 /* Blink1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blink1.h; sourceTree = "<group>"; };
+		02F61B1816813C5C00C708C8 /* Blink1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Blink1.m; sourceTree = "<group>"; };
+		02F61B1C16813CA400C708C8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = ../../../../System/Library/Frameworks/AppKit.framework; sourceTree = "<group>"; };
+		02F61B2316823B7F00C708C8 /* options.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = options.cpp; sourceTree = "<group>"; };
+		02F61B2416823B7F00C708C8 /* options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02F61AEF1681386000C708C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F61AF71681386000C708C8 /* Foundation.framework in Frameworks */,
+				02F61B1616813C1100C708C8 /* IOKit.framework in Frameworks */,
+				02F61B1D16813CA400C708C8 /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02F61AE71681386000C708C8 = {
+			isa = PBXGroup;
+			children = (
+				02F61AF81681386000C708C8 /* src */,
+				02F61AF51681386000C708C8 /* Frameworks */,
+				02F61AF31681386000C708C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02F61AF31681386000C708C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02F61AF21681386000C708C8 /* blinkcpu */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02F61AF51681386000C708C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02F61B1C16813CA400C708C8 /* AppKit.framework */,
+				02F61B1516813C1100C708C8 /* IOKit.framework */,
+				02F61AF61681386000C708C8 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02F61AF81681386000C708C8 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				02F61B2316823B7F00C708C8 /* options.cpp */,
+				02F61B2416823B7F00C708C8 /* options.h */,
+				02F61B1716813C5C00C708C8 /* Blink1.h */,
+				02F61B1816813C5C00C708C8 /* Blink1.m */,
+				02F61B1316813BF200C708C8 /* hid.c */,
+				02F61B1216813BEA00C708C8 /* hidapi.h */,
+				02F61B0E16813BDF00C708C8 /* blink1-lib.c */,
+				02F61B0F16813BDF00C708C8 /* blink1-lib.h */,
+				02F61B1016813BDF00C708C8 /* usbconfig.h */,
+				02F61B0A16813ABA00C708C8 /* MenuMeterCPU.h */,
+				02F61B041681388100C708C8 /* MenuMeterCPUStats.h */,
+				02F61B051681388100C708C8 /* MenuMeterCPUStats.m */,
+				02F61AF91681386000C708C8 /* main.mm */,
+				02F61AFD1681386000C708C8 /* blinkcpu.1 */,
+				02F61AFB1681386000C708C8 /* Supporting Files */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		02F61AFB1681386000C708C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02F61AFC1681386000C708C8 /* blinkcpu-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02F61AF11681386000C708C8 /* blinkcpu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02F61B011681386000C708C8 /* Build configuration list for PBXNativeTarget "blinkcpu" */;
+			buildPhases = (
+				02F61AEE1681386000C708C8 /* Sources */,
+				02F61AEF1681386000C708C8 /* Frameworks */,
+				02F61AF01681386000C708C8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = blinkcpu;
+			productName = blinkcpu;
+			productReference = 02F61AF21681386000C708C8 /* blinkcpu */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02F61AE91681386000C708C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Chris Reed";
+			};
+			buildConfigurationList = 02F61AEC1681386000C708C8 /* Build configuration list for PBXProject "blinkcpu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 02F61AE71681386000C708C8;
+			productRefGroup = 02F61AF31681386000C708C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02F61AF11681386000C708C8 /* blinkcpu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02F61AEE1681386000C708C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F61AFA1681386000C708C8 /* main.mm in Sources */,
+				02F61B081681388100C708C8 /* MenuMeterCPUStats.m in Sources */,
+				02F61B1116813BDF00C708C8 /* blink1-lib.c in Sources */,
+				02F61B1416813BF200C708C8 /* hid.c in Sources */,
+				02F61B1916813C5C00C708C8 /* Blink1.m in Sources */,
+				02F61B2516823B7F00C708C8 /* options.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		02F61AFF1681386000C708C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		02F61B001681386000C708C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		02F61B021681386000C708C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "src/blinkcpu-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		02F61B031681386000C708C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "src/blinkcpu-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02F61AEC1681386000C708C8 /* Build configuration list for PBXProject "blinkcpu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02F61AFF1681386000C708C8 /* Debug */,
+				02F61B001681386000C708C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02F61B011681386000C708C8 /* Build configuration list for PBXNativeTarget "blinkcpu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02F61B021681386000C708C8 /* Debug */,
+				02F61B031681386000C708C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02F61AE91681386000C708C8 /* Project object */;
+}
