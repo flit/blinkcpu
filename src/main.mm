@@ -38,7 +38,6 @@ int main(int argc, const char * argv[])
             @autoreleasepool
             {
                 NSArray * load = [stats currentLoad];
-//                NSLog(@"load=%@", load);
 
                 float combinedTotal = 0.0;
                 float combinedSystem = 0.0;
@@ -51,7 +50,6 @@ int main(int argc, const char * argv[])
                     float system = [[loadInfo objectForKey:@"system"] floatValue];
                     float user = [[loadInfo objectForKey:@"user"] floatValue];
                     float total = system + user;
-//                    NSLog(@"cpu%d: system=%f, user=%f, total=%f", cpuNum, system, user, total);
                     
                     combinedSystem += system;
                     combinedUser += user;
@@ -64,15 +62,10 @@ int main(int argc, const char * argv[])
                 combinedUser /= (float)cpuCount;;
                 combinedTotal /= (float)cpuCount;
                 
-//                NSLog(@"combined:system=%f,user=%f,total=%f", combinedSystem, combinedUser, combinedTotal);
-                
                 combinedTotal = MAX(0.07, combinedTotal);
                 
                 NSColor * loadColor;
                 loadColor = [NSColor colorWithCalibratedRed:combinedTotal green:0.0 blue:0.0 alpha:1.0];
-                
-//                float hue = combinedTotal;
-//                loadColor = [NSColor colorWithCalibratedHue:1.0 saturation:1.0 brightness:combinedTotal alpha:1.0];
                 
                 [blink fadeToRGB:loadColor atTime:LOAD_UPDATE_INTERVAL];
             }
